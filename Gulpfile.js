@@ -1,15 +1,26 @@
-var gulp = require("gulp");
-var sass = require("gulp-sass");
+const gulp = require("gulp"),
+	sass = require("gulp-sass"),
+	browserSync = require("browser-sync"),
+	autoprefixer = require("gulp-autoprefixer");
 
-sass.compiler = require("node-sass");
-
-gulp.task("sass", function () {
+function style() {
 	return gulp
-		.src("./sass/**/*.scss")
+		.src("./sass/main.scss")
 		.pipe(sass().on("error", sass.logError))
-		.pipe(gulp.dest("./css"));
-});
+		.pipe(gulp.dest("./css"))
+		.pipe(browserSync.stream());
+}
 
-gulp.task("sass:watch", function () {
-	gulp.watch("./sass/**/*.scss", ["sass"]);
-});
+function watch() {
+	browserSync.init({
+		server: {
+			baseDir: "./",
+		},
+	});
+	gulp.watch("./sass/**/*.scss", style);
+	gulp.watch("./*.html").on("change", browserSync.reload);
+	gulp.watch("./js/**/*.js").on("change", browserSync.reload);
+}
+
+exports.style = style;
+exports.watch = watch;
