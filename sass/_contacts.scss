@@ -4,8 +4,34 @@
 	height: 50px;
 	background: $background-color-primary;
 	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.contacts__container {
+	width: 55.5em;
+	height: 50px;
+	background: $background-color-primary;
+	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	flex-wrap: wrap;
 	align-items: center;
+}
+
+.contacts__content-item {
+	display: flex;
+	align-items: center;
+}
+
+.contacts__text {
+	margin-left: 8px;
+	font-family: "Noto Sans";
+	font-weight: bold;
+	-webkit-text-fill-color: #47a7ac;
+	-webkit-text-stroke: 0.5px #17484b;
+}
+
+.contacts__icon-facebook {
+	color: #3b5998;
 }
