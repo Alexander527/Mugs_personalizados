@@ -1,0 +1,20 @@
+.nav {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	border: 2px solid $background-color-primary;
+	padding: 1vw;
+}
+.nav__container {
+	width: 80%;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.nav__items {
+	list-style: none;
+	font-family: "Noto Sans";
+	font-size: 1.4vw;
+	margin-right: 4vw;
+}
