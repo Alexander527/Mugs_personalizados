@@ -1,0 +1,33 @@
+.footer {
+	background: $background-color-primary;
+	margin-top: 5vw;
+}
+
+.footer__title {
+	width: 100%;
+	color: #285355;
+	font-family: "Noto Sans";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 2em;
+	margin-top: 3vw;
+	margin-bottom: 1vw;
+}
+
+.footer__contacts {
+	height: 3.125em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer__container {
+	width: 55.5em;
+	height: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: center;
+	position: relative;
+}

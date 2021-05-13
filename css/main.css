@@ -163,3 +163,78 @@ body {
 
 .slider__btn--left {
   left: 10px; }
+
+.products {
+  width: 100%; }
+
+.products__title {
+  width: 68%;
+  margin-left: 16%;
+  margin-top: 5vw;
+  font-family: "Noto Sans";
+  font-size: 3em;
+  color: #528c53; }
+
+.products__content {
+  width: 80%;
+  margin-left: 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  margin-top: 5vw; }
+
+.mug__content {
+  border: 2px solid #e2e2e2;
+  border-radius: 5px; }
+
+.mug__discount {
+  color: red;
+  font-family: "Noto Sans";
+  text-align: left;
+  margin: 1vw 1vw; }
+
+.mug__image {
+  width: 100%; }
+
+.mug__text {
+  font-family: "Noto Sans";
+  font-size: 1.1em;
+  text-align: left;
+  margin: 1vw 1vw; }
+
+.mug_price {
+  font-family: "Noto Sans";
+  font-size: 1.1em;
+  text-align: left;
+  margin: 1vw 1vw;
+  color: #828282; }
+
+.footer {
+  background: #e2e2e2;
+  margin-top: 5vw; }
+
+.footer__title {
+  width: 100%;
+  color: #285355;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2em;
+  margin-top: 3vw;
+  margin-bottom: 1vw; }
+
+.footer__contacts {
+  height: 3.125em;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.footer__container {
+  width: 55.5em;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative; }
